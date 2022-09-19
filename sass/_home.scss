@@ -1,0 +1,116 @@
+.container{
+    margin: 0 auto;
+    
+    .content{
+        margin: 0 auto;
+        width: 100%;
+        height: 60rem;
+
+        h2{
+            color: #D80602;
+            font-family: 'Sora', sans-serif;
+            padding: 1rem;
+            font-size: 5rem;
+            text-align: center;
+            margin: 1rem 0;
+        }
+
+        .product-slider{
+            width: 100%;
+            max-width: 100%;
+            height: 100%;
+
+            .owl-nav{
+                margin: 0;
+                height: 2rem;
+                background-color: tomato;
+                height: 0rem;
+
+                .owl-next,
+                .owl-prev{
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    color: var(--red);
+                    font-size: 6rem;
+                    background: none;
+                    border: none;
+                    outline: none;
+
+                    span{
+                        color: #119E56;
+                        font-size: 6rem;
+                        font-weight: bold;
+                    }
+                }
+
+                .owl-next{
+                  right: 1rem;
+                }
+
+                .owl-prev{
+                  left: 1rem;
+                }
+            }
+
+            .owl-dots{
+                height: 2rem;
+                display: none;
+            }
+
+            div{
+                width: 100%;
+                height: 100%;
+
+                img{
+                    width: 100%;
+                    max-width: 100%;
+                    height: 100%;
+                    object-fit: fill;
+                }
+            }
+        }
+    }
+
+    .product-container{
+        width: 100%;
+        max-width: 100%;
+        height: 100vh;
+        margin-top: 12rem;
+        background-color: blue;
+
+        h2{
+            background-color: tomato;
+            padding: 2rem;
+            font-size: 3rem;
+        }
+      .content{
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        background-color: yellow;
+        @include flex(row, center, center);
+        flex-wrap: wrap;
+
+        .cart-item{
+            background-color: red;
+            width: 100%;
+            max-width: 30%;
+            height: 40rem;
+            margin: 1.6rem 0.8rem;
+            @include flex(column, center, space-between);
+            padding: 1.6rem 0;
+
+            img{
+                border-radius: 50%;
+                width: 100%;
+                max-width: 70%;
+                height: 28rem;
+                object-fit: cover;
+                background-color: blue;
+            }
+        }
+        }
+        
+    }
+}

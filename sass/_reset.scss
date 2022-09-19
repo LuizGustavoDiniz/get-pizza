@@ -2,4 +2,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    //font-family: 'Sora', sans-serif;
+    list-style: none;
+    text-transform: capitalize;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #e2e2e2;
+}
+
+button{
+    border: none;
+    background: none;
+}
+
+a{
+    text-decoration: none;
 }

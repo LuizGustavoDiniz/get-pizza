@@ -1,0 +1,43 @@
+header{
+
+    width: 100%;
+    background-color: #119E56;
+
+    .container{
+        margin: 0 auto;
+        @include flex(row, center, space-between);
+
+        a{
+            img{
+                width: 7rem;
+                height: 7rem;
+            }
+        }
+
+        nav{
+
+            ul{
+                @include flex(row, center, center);
+
+                li{
+                    padding: 0.8rem 1.6rem;
+                    margin-right: 1rem;
+
+                    a{
+                        font-size: 1.8rem;
+                        font-weight: 500;
+                        color: #fff;
+                        transition: color 0.3s;
+
+                        &:hover{
+                            color: #D80602;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+
+}
+
